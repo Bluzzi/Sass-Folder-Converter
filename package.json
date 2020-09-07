@@ -1,0 +1,22 @@
+{
+  "name": "sass-folder-converter",
+  "version": "1.0.2",
+  "description": "Allows you to convert folders containing Sass files to CSS to another folder.",
+  "keywords": ["sass", "scss", "convert", "folder", "scss-parser", "sass-parser"],
+  "main": "Index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bluzzi/Sass-Folder-Converter.git"
+  },
+  "author": "bluzzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bluzzi/Sass-Folder-Converter/issues"
+  },
+  "homepage": "https://github.com/Bluzzi/Sass-Folder-Converter#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "sass": "^1.26.10"
+  }
+}
