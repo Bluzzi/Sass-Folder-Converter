@@ -1,6 +1,6 @@
 {
   "name": "sass-folder-converter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Allows you to convert folders containing Sass files to CSS to another folder.",
   "keywords": ["sass", "scss", "convert", "folder", "parser", "converter", "css"],
   "main": "Index.js",
