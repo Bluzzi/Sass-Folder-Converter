@@ -27,11 +27,13 @@ async function convert(fromPath, destinationPath, outputStyle = "compressed", cr
 
                 let result = sass.renderSync({file: fromPath + path + file, outputStyle: outputStyle});
 
-                // Create the path if does not exist :
-                if(!fs.existsSync(destinationPath + path)) fs.mkdirSync(destinationPath + path);
+                if(result.length){
+                    // Create the path if does not exist :
+                    if(!fs.existsSync(destinationPath + path)) fs.mkdirSync(destinationPath + path);
 
-                // Write CSS :
-                fs.writeFileSync(destinationPath + path + file.substr(0, file.length - 5) + ".css", result.css);
+                    // Write CSS :
+                    fs.writeFileSync(destinationPath + path + file.substr(0, file.length - 5) + ".css", result.css);
+                }
             }
         });
     }
